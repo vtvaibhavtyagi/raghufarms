@@ -1,0 +1,107 @@
+.hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    #F5B731 0%,
+    #E8772E 40%,
+    #3D8A2C 80%,
+    #1E4D12 100%
+  );
+  padding-top: var(--nav-height);
+  overflow: hidden;
+}
+
+.bgPattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fff' fill-opacity='1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
+  padding-bottom: var(--space-24);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-5);
+  background: rgba(255, 248, 231, 0.2);
+  border: 1px solid rgba(255, 248, 231, 0.3);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  color: var(--color-cream);
+  backdrop-filter: blur(8px);
+}
+
+.title {
+  font-size: var(--text-7xl);
+  color: var(--color-cream);
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.accent {
+  color: var(--color-golden-yellow);
+  font-style: italic;
+}
+
+.subtitle {
+  max-width: 550px;
+  font-family: var(--font-accent);
+  font-size: var(--text-lg);
+  color: var(--color-cream);
+  opacity: 0.9;
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: var(--space-2);
+}
+
+.hills {
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  right: -5%;
+  height: 30%;
+  pointer-events: none;
+}
+
+.hill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50% 50% 0 0;
+}
+
+.h1 {
+  height: 100%;
+  background: #2B6E1A;
+  opacity: 0.5;
+  bottom: -15%;
+}
+
+.h2 {
+  height: 70%;
+  background: var(--color-cream);
+  bottom: -25%;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+  }
+  .title {
+    font-size: var(--text-4xl);
+  }
+}

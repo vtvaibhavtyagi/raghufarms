@@ -1,0 +1,211 @@
+.plan {
+  padding: var(--space-24) 0;
+  background: var(--color-parchment);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-12);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-10);
+  align-items: start;
+}
+
+/* Ticket */
+.ticketCol {
+  position: relative;
+}
+
+.ticket {
+  background: var(--color-cream);
+  border: 3px solid var(--color-rich-brown);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 6px 6px 0px rgba(92, 58, 30, 0.15);
+  position: relative;
+}
+
+.ticketHeader {
+  background: var(--color-rich-brown);
+  padding: var(--space-5) var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ticketTitle {
+  font-family: var(--font-heading);
+  color: var(--color-golden-yellow);
+  font-size: var(--text-xl);
+  margin: 0;
+}
+
+.ticketBadge {
+  font-size: var(--text-xs);
+  color: var(--color-cream);
+  background: rgba(255, 248, 231, 0.15);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+}
+
+.ticketBody {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--space-4);
+  border-bottom: 1px dashed var(--color-parchment-dark);
+}
+
+.priceRow:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.priceLabel {
+  font-weight: 600;
+  color: var(--color-text-dark);
+  font-size: var(--text-base);
+  display: block;
+}
+
+.priceNote {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.priceValue {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  color: var(--color-forest-green);
+  font-weight: 700;
+}
+
+.ticketFooter {
+  padding: var(--space-4) var(--space-6);
+  background: var(--color-parchment);
+  border-top: 2px dashed var(--color-parchment-dark);
+}
+
+.ticketFooter p {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-1);
+}
+
+.ticketFooter p:last-child {
+  margin-bottom: 0;
+}
+
+.ticketPerf {
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.perfDot {
+  width: 16px;
+  height: 16px;
+  background: var(--color-parchment);
+  border-radius: var(--radius-full);
+}
+
+/* Info Column */
+.infoCol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.infoCard {
+  background: var(--color-cream);
+  border: 2px solid var(--color-parchment-dark);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  transition: border-color var(--transition-base);
+}
+
+.infoCard:hover {
+  border-color: var(--color-forest-green);
+}
+
+.infoTitle {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  color: var(--color-forest-green-dark);
+  margin-bottom: var(--space-4);
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.infoItem strong {
+  font-size: var(--text-sm);
+  color: var(--color-text-dark);
+}
+
+.infoItem span {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.infoText {
+  font-size: var(--text-sm);
+  color: var(--color-text-body);
+  line-height: 1.7;
+}
+
+.mapPlaceholder {
+  margin-top: var(--space-4);
+  padding: var(--space-8) var(--space-4);
+  background: var(--color-parchment);
+  border: 2px dashed var(--color-parchment-dark);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.mapPlaceholder span:first-child {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ticketPerf {
+    display: none;
+  }
+}
