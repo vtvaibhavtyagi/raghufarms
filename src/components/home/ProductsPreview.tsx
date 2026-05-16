@@ -41,13 +41,6 @@ export default function ProductsPreview() {
             ))}
           </div>
         </div>
-
-        <ScrollAnimator>
-          <p className={styles.comingSoon}>
-            🛒 <strong>Online shop coming soon!</strong> Fresh produce delivered
-            to your doorstep.
-          </p>
-        </ScrollAnimator>
       </div>
     </section>
   );

@@ -101,7 +101,7 @@ export default function PlanYourVisit() {
                   Call or WhatsApp us to reserve your spot:
                 </p>
                 <a href="tel:+919876543210" className="btn btn-secondary">
-                  📞 +91 98765 43210
+                  📞 +91 79832 46387
                 </a>
               </div>
             </ScrollAnimator>

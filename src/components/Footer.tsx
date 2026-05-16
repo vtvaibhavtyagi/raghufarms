@@ -94,7 +94,7 @@ export default function Footer() {
           <ul className={styles.contactList}>
             <li>
               <span className={styles.contactIcon}>📍</span>
-              <span>Raghu Organic Farm, Village Road, Haryana, India</span>
+              <span>Raghu Organic Farm, Village Molna, Roorkee, Uttarakhand, India</span>
             </li>
             <li>
               <span className={styles.contactIcon}>🕐</span>
@@ -102,7 +102,7 @@ export default function Footer() {
             </li>
             <li>
               <span className={styles.contactIcon}>📞</span>
-              <span>+91 98765 43210</span>
+              <span>+91 79832 46387</span>
             </li>
             <li>
               <span className={styles.contactIcon}>✉️</span>
