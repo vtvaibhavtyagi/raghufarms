@@ -94,7 +94,7 @@ export default function Footer() {
           <ul className={styles.contactList}>
             <li>
               <span className={styles.contactIcon}>📍</span>
-              <span>Raghu Organic Farm, Village Molna, Roorkee, Uttarakhand, India</span>
+              <span>Raghu Organic Farm, Village Molna - Ibalpur, Roorkee, Uttarakhand, India  - 247668</span>
             </li>
             <li>
               <span className={styles.contactIcon}>🕐</span>
@@ -106,7 +106,7 @@ export default function Footer() {
             </li>
             <li>
               <span className={styles.contactIcon}>✉️</span>
-              <span>hello@raghuorganicfarm.com</span>
+              <span>hello@raghufarms.in</span>
             </li>
           </ul>
         </div>
