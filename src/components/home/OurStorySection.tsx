@@ -39,7 +39,7 @@ export default function OurStorySection() {
             <p className={styles.text}>
               Raghu Organic Farm began as a dream of our grandfather — a vision
               to farm the way nature intended. Over 25 years ago, on this very
-              land in Haryana, he planted the first seeds of what would become a
+              land in Uttarakhand, he planted the first seeds of what would become a
               sanctuary of organic agriculture.
             </p>
           </ScrollAnimator>

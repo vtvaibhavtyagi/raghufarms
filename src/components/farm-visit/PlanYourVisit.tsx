@@ -84,8 +84,8 @@ export default function PlanYourVisit() {
               <div className={styles.infoCard}>
                 <h4 className={styles.infoTitle}>📍 How to Reach</h4>
                 <p className={styles.infoText}>
-                  Raghu Organic Farm, Village Road, Near NH-48, Haryana, India.
-                  30 minutes from Gurugram, 1 hour from Delhi.
+                  Raghu Organic Farm, Village Molna - Ibalpur, Roorkee, Uttarakhand, India - 247668.
+                  30 minutes from Roorkee, 3 hour from Delhi.
                 </p>
                 <div className={styles.mapPlaceholder}>
                   <span>🗺️</span>
