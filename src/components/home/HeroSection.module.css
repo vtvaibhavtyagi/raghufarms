@@ -7,11 +7,11 @@
   overflow: hidden;
   background: linear-gradient(
     180deg,
-    #F5B731 0%,
-    #E8772E 30%,
-    #E8772E 50%,
-    #2B6E1A 80%,
-    #1E4D12 100%
+    var(--color-golden-yellow) 0%,
+    var(--color-sunset-orange) 30%,
+    var(--color-sunset-orange) 50%,
+    var(--color-forest-green) 80%,
+    var(--color-forest-green-dark) 100%
   );
   padding-top: var(--nav-height);
 }
@@ -59,21 +59,21 @@
 
 .hillBack {
   height: 100%;
-  background: #3D8A2C;
+  background: var(--color-forest-green-light);
   opacity: 0.6;
   bottom: -10%;
 }
 
 .hillMid {
   height: 80%;
-  background: #2B6E1A;
+  background: var(--color-forest-green);
   opacity: 0.8;
   bottom: -15%;
 }
 
 .hillFront {
   height: 55%;
-  background: #1E4D12;
+  background: var(--color-forest-green-dark);
   bottom: -20%;
 }
 

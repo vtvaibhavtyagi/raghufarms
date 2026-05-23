@@ -76,22 +76,163 @@
   margin: 0;
 }
 
-.comingSoon {
-  text-align: center;
-  margin-top: var(--space-10);
-  font-size: var(--text-base);
-  color: var(--color-text-muted);
-  background: var(--color-parchment);
-  display: inline-block;
-  padding: var(--space-3) var(--space-6);
-  border-radius: var(--radius-full);
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
+/* Heritage Section & Timeline */
+.heritageSection {
+  margin-top: var(--space-20);
+  padding-top: var(--space-16);
+  border-top: 2px dashed var(--color-parchment-dark);
 }
 
-/* Center the coming soon text */
-.products .container > div:last-child {
+.heritageHeader {
+  text-align: center;
+  margin-bottom: var(--space-12);
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.heritageBadge {
+  background: var(--color-forest-green-dark);
+  color: var(--color-white);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  margin-bottom: var(--space-2);
+}
+
+.heritageTitle {
+  font-size: var(--text-3xl);
+  color: var(--color-forest-green-dark);
+  margin: 0;
+}
+
+.heritageSubtitle {
+  font-family: var(--font-accent);
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-top: var(--space-1);
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  position: relative;
+  align-items: stretch;
+}
+
+.timelineItemWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.timelineItem {
+  flex-grow: 1;
+}
+
+.timelineCard {
+  background: var(--color-white);
+  border: 2px solid var(--color-forest-green);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6) var(--space-4) var(--space-8);
+  text-align: center;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all var(--transition-base);
+  box-shadow: 4px 4px 0px rgba(94, 143, 49, 0.15);
+}
+
+.timelineCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 6px 6px 0px rgba(94, 143, 49, 0.25);
+  border-color: var(--color-sunset-orange);
+}
+
+.stepBadge {
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background: var(--color-sunset-orange);
+  color: var(--color-white);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.timelineIconWrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-full);
+  background: var(--color-cream);
+  border: 2px solid var(--color-forest-green-light);
+  display: flex;
+  align-items: center;
   justify-content: center;
+  margin-bottom: var(--space-4);
+  transition: transform var(--transition-base);
+}
+
+.timelineCard:hover .timelineIconWrapper {
+  transform: scale(1.1) rotate(-5deg);
+  border-color: var(--color-sunset-orange-light);
+}
+
+.timelineIcon {
+  font-size: 1.8rem;
+}
+
+.timelineCardTitle {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  color: var(--color-text-dark);
+  margin-bottom: var(--space-3);
+  font-weight: 700;
+}
+
+.timelineCardDesc {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.timelineConnector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-golden-yellow);
+  font-size: 1.5rem;
+  width: 30px;
+  flex-shrink: 0;
+  margin: 0 var(--space-1);
+}
+
+@media (max-width: 1024px) {
+  .timeline {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+  
+  .timelineConnector {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .timeline {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
 }

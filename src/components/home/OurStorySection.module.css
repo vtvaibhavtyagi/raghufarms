@@ -54,30 +54,16 @@
   overflow: hidden;
 }
 
-.imagePlaceholder {
+.sugarcaneIllustration {
+  display: block;
+  width: 100%;
+  height: auto;
   aspect-ratio: 4 / 3;
-  background: linear-gradient(
-    135deg,
-    var(--color-forest-green) 0%,
-    var(--color-forest-green-light) 50%,
-    var(--color-golden-yellow) 100%
-  );
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-4);
+  transition: transform var(--transition-slow);
 }
 
-.placeholderIcon {
-  font-size: 4rem;
-}
-
-.placeholderText {
-  font-family: var(--font-heading);
-  font-size: var(--text-xl);
-  color: var(--color-cream);
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+.imageFrame:hover .sugarcaneIllustration {
+  transform: scale(1.03);
 }
 
 .stamp {

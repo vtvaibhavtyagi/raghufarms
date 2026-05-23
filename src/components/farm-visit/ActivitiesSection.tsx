@@ -19,6 +19,13 @@ const activities = [
       "Grab a basket and harvest seasonal vegetables and fruits directly from the plants. Take home what you pick — there's nothing fresher than produce you've harvested yourself!",
   },
   {
+    icon: "🔥",
+    title: "Gur Bhatti Experience",
+    duration: "1.5 hours",
+    description:
+      "Witness the authentic process of boiling fresh sugarcane juice in massive iron kettles. Chew raw sugarcane stalks, squeeze fresh juice, and savor warm, melted jaggery straight from the bhatti.",
+  },
+  {
     icon: "🐄",
     title: "Meet Our Animals",
     duration: "45 minutes",

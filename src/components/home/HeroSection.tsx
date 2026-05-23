@@ -21,7 +21,7 @@ export default function HeroSection() {
       <div className={`container ${styles.heroContent}`}>
         <ScrollAnimator>
           <div className={styles.badge}>
-            <span>🌱</span> 100% Organic & Sustainable
+            <span>🌾</span> Sugarcane & Jaggery Heritage
           </div>
         </ScrollAnimator>
 
@@ -35,8 +35,7 @@ export default function HeroSection() {
 
         <ScrollAnimator delay={400}>
           <p className={styles.subtitle}>
-            From our fields to your table — experience the purity of organic
-            farming, handpicked with love and care for generations.
+            From our lush sugarcane fields in Uttarakhand to your kitchen — experience the purity of wood-fired organic jaggery and fresh farm produce, crafted with love for generations.
           </p>
         </ScrollAnimator>
 
@@ -59,8 +58,8 @@ export default function HeroSection() {
             </div>
             <div className={styles.statDivider}></div>
             <div className={styles.stat}>
-              <span className={styles.statNumber}>50+</span>
-              <span className={styles.statLabel}>Organic Varieties</span>
+              <span className={styles.statNumber}>10+ Acres</span>
+              <span className={styles.statLabel}>Organic Sugarcane</span>
             </div>
             <div className={styles.statDivider}></div>
             <div className={styles.stat}>
@@ -71,15 +70,15 @@ export default function HeroSection() {
         </ScrollAnimator>
       </div>
 
-      {/* Floating elements */}
+      {/* Floating sugarcane leaves and jaggery drops */}
       <div className={styles.floatingLeaf} style={{ top: "20%", left: "8%" }}>
-        🍃
+        🎋
       </div>
       <div className={styles.floatingLeaf} style={{ top: "35%", right: "10%" }}>
-        🌿
+        🌾
       </div>
       <div className={styles.floatingLeaf} style={{ top: "60%", left: "5%" }}>
-        🍂
+        🍯
       </div>
     </section>
   );

@@ -4,25 +4,25 @@
 
 /* --- CSS Custom Properties --- */
 :root {
-  /* Colors from logo */
-  --color-forest-green: #2B6E1A;
-  --color-forest-green-dark: #1E4D12;
-  --color-forest-green-light: #3D8A2C;
-  --color-sunset-orange: #E8772E;
-  --color-sunset-orange-dark: #C46020;
-  --color-sunset-orange-light: #F09550;
-  --color-golden-yellow: #F5B731;
-  --color-golden-yellow-light: #F8CC66;
-  --color-rich-brown: #5C3A1E;
-  --color-rich-brown-light: #7A5232;
-  --color-deep-red: #C0392B;
-  --color-cream: #FFF8E7;
-  --color-parchment: #F5E6C8;
-  --color-parchment-dark: #E8D4AD;
-  --color-white: #FFFDF7;
-  --color-text-dark: #2C1810;
-  --color-text-body: #4A3728;
-  --color-text-muted: #7A6B5D;
+  /* Sugarcane & Jaggery Palette - Transformed from original logo colors */
+  --color-forest-green: #5E8F31; /* Vibrant Sugarcane Stalk Green */
+  --color-forest-green-dark: #375718; /* Deep Sugarcane Forest Green */
+  --color-forest-green-light: #83BD3E; /* Light Sugarcane Leaf Green */
+  --color-sunset-orange: #D97706; /* Rich Jaggery Amber */
+  --color-sunset-orange-dark: #B45309; /* Dark Caramelized Jaggery */
+  --color-sunset-orange-light: #F59E0B; /* Bright Golden Sugarcane Juice */
+  --color-golden-yellow: #F59E0B; /* Golden Boiling Jaggery */
+  --color-golden-yellow-light: #FCD34D; /* Light Sugarcane Syrup */
+  --color-rich-brown: #451A03; /* Molasses Dark Brown */
+  --color-rich-brown-light: #78350F; /* Warm Soil & Woodfire Brown */
+  --color-deep-red: #991B1B; /* Deep Purple Sugarcane Maroon */
+  --color-cream: #FFFDF5; /* Soft Sweet Cream */
+  --color-parchment: #F5EAD4; /* Golden Parchment */
+  --color-parchment-dark: #E8DBBE; /* Darker Golden Parchment */
+  --color-white: #FFFDF9; /* Pure Honey White */
+  --color-text-dark: #2A1405; /* Molasses Dark Text */
+  --color-text-body: #4A301A; /* Warm Brown Body Text */
+  --color-text-muted: #826852; /* Earthy Muted Text */
 
   /* Typography */
   --font-heading: var(--font-playfair), 'Georgia', serif;
